@@ -305,6 +305,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <div class="music-player">
     
+    <div class="title center-align">
+        <i class="fa fa-music"></i>&nbsp;&nbsp;关于音乐
+    </div>
+    
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s12">
             <div id="aplayer" class="music"></div>
@@ -317,7 +321,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 $(function () {
     new APlayer({
         container: document.getElementById('aplayer'),
-        fixed: 'false' === 'true',
+        fixed: 'true' === 'true',
         autoplay: 'true' === 'true',
         theme: '#42b983',
         loop: 'all',
@@ -325,7 +329,7 @@ $(function () {
         preload: 'auto',
         volume: Number('0.6'),
         listFolded: 'false' === 'true',
-        listMaxHeight: '',
+        listMaxHeight: '5',
         audio: JSON.parse('[{"name":"Warm","artist":"Dre'es,MIA","url":"/medias/music/warm.mp3","cover":"http://xxx.com/music-cover1.png"},{"name":"Dr Disrespect - Gillete","artist":"199x","url":"/medias/music/dr.mp3","cover":"http://xxx.com/music-cover3.png"}]')
     });
 });
